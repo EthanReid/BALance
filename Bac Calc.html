@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<script>
+var wdr = 0;
+var weight = 240;
+var imd = 0.05;
+var boaf = 0.25;
+var bo = 0.2;
+var d = 0.13;
+var daf = 0.16;
+var id = 0.08;
+var drinks = 7;
+var ihr = 1;
+
+
+if (wight = 100){
+	wdr = 0.0322;
+}
+if (wight = 120){
+	wdr = 0.0265;
+}
+if (wight = 140){
+	wdr = 0.023;
+}
+if (wight = 160){
+	wdr = 0.02;
+}
+if (wight = 180){
+	wdr = 0.018;
+}
+if (wight = 200){
+	wdr = 0.016;
+}
+if (wight = 220){
+	wdr = 0.015;
+}
+if (wight = 240){
+	wdr = 0.0135;
+}
+
+var ibac = wdr* drinks/ihr;
+
+if (ibac >= id){
+window.alert("Dont Drive, you are abouve the legial limit");
+console.log(ibac);
+}
+
+
+
+</script>
+<body>
+</body>
+</html>
