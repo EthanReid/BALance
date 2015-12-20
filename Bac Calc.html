@@ -6,39 +6,39 @@
 </head>
 <script>
 var wdr = 0;
-var weight = 240;
+var weight = 120;
 var imd = 0.05;
 var boaf = 0.25;
 var bo = 0.2;
 var d = 0.13;
 var daf = 0.16;
 var id = 0.08;
-var drinks = 7;
-var ihr = 1;
+var drinks = 13;
+var ihr = 3;
 
 
 if (wight = 100){
 	wdr = 0.0322;
 }
-if (wight = 120){
+else if (weight = 120){
 	wdr = 0.0265;
 }
-if (wight = 140){
+else if (weight = 140){
 	wdr = 0.023;
 }
-if (wight = 160){
+else if (weight = 160){
 	wdr = 0.02;
 }
-if (wight = 180){
+else if (weight = 180){
 	wdr = 0.018;
 }
-if (wight = 200){
+else if (weight = 200){
 	wdr = 0.016;
 }
-if (wight = 220){
+else if (weight = 220){
 	wdr = 0.015;
 }
-if (wight = 240){
+else if (weight = 240){
 	wdr = 0.0135;
 }
 
@@ -47,6 +47,21 @@ var ibac = wdr* drinks/ihr;
 if (ibac >= id){
 window.alert("Dont Drive, you are abouve the legial limit");
 console.log(ibac);
+} else if (ibac >= imd) {
+	window.alert("I would'nt drive, you are a bit faded.");
+	console.log(imd);
+}if (ibac >= daf){
+window.alert("You are Drunk AF");
+console.log(daf);
+}else if (ibac >= d){
+	window.alert("You are Drunk, Go to bed, you will be wrecked in the morning.");
+	console.log(d);
+}if (ibac >= boaf){
+	window.alert("DON'T DRINK THIS MUCH, YOU WILL BLACK OUT, have a sober friend watching your back.  You could make up in a hospital");
+	console.log(boaf);
+}else if (ibac >= bo){
+	window.alert("Don't drink this much.  There is a good chance you will black out.  You could wake up with drawings on your face..");
+	console.log(bo);
 }
 
 
