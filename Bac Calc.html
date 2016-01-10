@@ -3,17 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
+<input Id="weightInput" class="span3" style="margin: 0pt auto;" type="number" placeholder="Weight">
+<button onclick="myFunction()">Click me</button>
 </head>
 <script>
+
 var wdr = 0;
-var weight = 120;
+var weight = 130;
 var imd = 0.05;
 var boaf = 0.25;
 var bo = 0.2;
 var d = 0.13;
 var daf = 0.16;
 var id = 0.08;
-var drinks = 13;
+var drinks = 4;
 var ihr = 1;
 
 
@@ -34,16 +37,16 @@ else if (weight = 180){
 }
 else if (weight = 200){
 	wdr = 0.016;
-}
-else if (weight = 220){
+
+}else if (weight = 220){
 	wdr = 0.015;
 }
-if (weight = 240){
+else if (weight = 240){
 	wdr = 0.0135;
 }
 
 var ibac = wdr* drinks/ihr;
-
+function myFunction(){
 if (ibac >= id){
 window.alert("Dont Drive, you are abouve the legial limit");
 console.log(ibac);
@@ -63,8 +66,7 @@ console.log(daf);
 	window.alert("Don't drink this much.  There is a good chance you will black out.  You could wake up with drawings on your face..");
 	console.log(bo);
 }
-
-
+}
 
 </script>
 <body>
